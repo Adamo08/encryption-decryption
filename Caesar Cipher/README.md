@@ -49,7 +49,3 @@ Then the encrypted message will be:  **KHOOR**.
 
 To decrypt, shift `3` positions back, and you’ll recover the original text: **HELLO**.
 
-## Implementation
-
-### Encryption Formula:
-To encrypt a letter, use the following formula:
