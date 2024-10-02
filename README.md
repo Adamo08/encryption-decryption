@@ -1,6 +1,6 @@
 # Cryptography Algorithms
 
-This repository contains implementations of various encryption and decryption algorithms in different programming languages (JAVA/Python). The goal is to provide simple and easy-to-understand code for educational and practical purposes.
+This repository contains implementations of various encryption and decryption algorithms in different programming languages (```JAVA``` and ```Python```). The goal is to provide simple and easy-to-understand code for educational and practical purposes.
 
 ## Algorithms Included
 
