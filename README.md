@@ -4,12 +4,12 @@ This repository contains implementations of various encryption and decryption al
 
 ## Algorithms Included
 
+- **Vigenère Cipher**
 - **AES (Advanced Encryption Standard)**
 - **RSA (Rivest–Shamir–Adleman)**
 - **DES (Data Encryption Standard)**
 - **Blowfish**
 - **Caesar Cipher**
-- **Vigenère Cipher**
 - **Base64 Encoding/Decoding**
 
 ## Getting Started
