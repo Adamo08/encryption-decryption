@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cryptography Algorithms
 
 This repository contains implementations of various encryption and decryption algorithms in different programming languages (```JAVA``` and ```Python```). The goal is to provide simple and easy-to-understand code for educational and practical purposes.
@@ -31,3 +32,6 @@ To run the algorithms, you will need the following installed on your system (dep
    ```bash
    cd encryption-decryption
    
+=======
+
+>>>>>>> cf7dac3fae74b5b5e9c60534577d83111a521a74
