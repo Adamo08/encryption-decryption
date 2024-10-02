@@ -4,7 +4,9 @@ The **Caesar Cipher** is one of the simplest and oldest encryption techniques. I
 
 ## How the Caesar Cipher Works
 
-![Caesar Cipher](image.png)
+<p align="center">
+  <img src="./image.png" alt="Caesar Cipher" />
+</p>
 
 In the Caesar Cipher, each letter in the plaintext is replaced by a letter a fixed number of positions down or up the alphabet. For example, with a shift of `3`:
 - `A` becomes `D`
