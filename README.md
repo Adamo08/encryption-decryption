@@ -5,11 +5,11 @@ This repository contains implementations of various encryption and decryption al
 ## Algorithms Included
 
 - **Caesar Cipher**
+- **Affine Cipher**
 - **Vigenère Cipher**
 - **AES (Advanced Encryption Standard)**
 - **RSA (Rivest–Shamir–Adleman)**
 - **DES (Data Encryption Standard)**
-- **Blowfish**
 
 - **Base64 Encoding/Decoding**
 
