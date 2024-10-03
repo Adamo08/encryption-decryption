@@ -4,7 +4,6 @@
 - [Overview](#overview)
 - [Features](#features)
 - [How It Works](#how-it-works)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Examples](#examples)
 
@@ -29,16 +28,6 @@ The Vigenère Cipher uses a key that repeats to match the length of the message.
 1. The key is repeated to match the length of the ciphertext.
 2. Each letter in the ciphertext is shifted backward in the alphabet by the position of the corresponding letter in the key, returning the original plaintext.
 
-## Installation
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/vigenere-cipher.git
-    ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd vigenere-cipher
-    ```
 
 
 ## Usage
@@ -46,7 +35,6 @@ You can use the provided Python functions to encrypt and decrypt messages. The `
 
 ### Example Usage
 Here is how you can use the Vigenère Cipher in a Python script:
-
 ```python
 text_to_encrypt = "Hello, World!"
 key = "KEY"
