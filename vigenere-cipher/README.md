@@ -76,7 +76,7 @@ encrypted_text = encrypt_vigenere(text_to_encrypt, key)
 print(f"Encrypted Text with Auto-Key: {encrypted_text}")
 
 # Decrypt the message with the auto-key
-decrypted_text = decrypt_vigenere(encrypted_text, auto_key)
+decrypted_text = decrypt_vigenere(encrypted_text, key)
 print(f"Decrypted Text with Auto-Key: {decrypted_text}")
 ```
 
