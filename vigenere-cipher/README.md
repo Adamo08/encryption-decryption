@@ -64,11 +64,15 @@ You can use the provided Python functions to encrypt and decrypt messages with e
 text_to_encrypt = "HELLOWORLD"
 key = "KEY"
 
-# Generate auto-key
-auto_key = generate_auto_key(text_to_encrypt, key)
+'''
+    To test the autokey implementation, change the generate_key() 
+    to generate_auto_key() inside encrypt_vigenere() and decrypt_vigenere() 
+    functions
+'''
+
 
 # Encrypt the message with the auto-key
-encrypted_text = encrypt_vigenere(text_to_encrypt, auto_key)
+encrypted_text = encrypt_vigenere(text_to_encrypt, key)
 print(f"Encrypted Text with Auto-Key: {encrypted_text}")
 
 # Decrypt the message with the auto-key
