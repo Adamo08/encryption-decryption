@@ -7,6 +7,7 @@ This repository contains implementations of various encryption and decryption al
 - **Caesar Cipher**
 - **Affine Cipher**
 - **Vigenère Cipher**
+- **Hill Cipher**
 - **AES (Advanced Encryption Standard)**
 - **RSA (Rivest–Shamir–Adleman)**
 - **DES (Data Encryption Standard)**
