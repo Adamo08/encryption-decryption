@@ -1,3 +1,5 @@
+
+# A function to generate the key , by repeating the key to match the length of the msg
 def generate_key(msg, key):
     key = list(key)
     if len(msg) == len(key):
@@ -6,6 +8,15 @@ def generate_key(msg, key):
         for i in range(len(msg) - len(key)):
             key.append(key[i % len(key)])
     return "".join(key)
+
+
+# A function to encrypt the message using the generated key (autokey_system) for more security
+def generate_auto_key(msg, key):
+    key = list(key)
+    for i in range(len(key), len(msg) - len(key)):
+        key.append(msg[i])
+    return "".join(key)
+
 
 def encrypt_vigenere(msg, key):
     encrypted_text = []
