@@ -11,7 +11,7 @@
 - [Limitations](#limitations)
 - [References](#references)
 
----- 
+---
 
 ## Introduction
 
@@ -21,12 +21,13 @@ This implementation of the Hill Cipher performs both encryption and decryption u
 
 Here’s how you can incorporate the **Hill Cipher** formula and a 3x3 matrix example using mathematical expressions in GitHub-supported markdown.
 
-
 ### Hill Cipher Formula
 
 The encryption process can be represented mathematically as:
 
-$$C = E(K, P) = (P \cdot K) \mod 26$$
+$$
+C = E(K, P) = (P \cdot K) \mod 26
+$$
 
 Where:
 - $C$ is the ciphertext (as a vector),
@@ -39,27 +40,63 @@ Where:
 
 Let’s consider an example where:
 
-- Plaintext vector $P = \begin{bmatrix} 15 & 0 & 24 \end{bmatrix}$ (which corresponds to the letters "PAY"),
-- Key matrix $K = \begin{bmatrix} 17 & 17 & 5 \\ 21 & 18 & 21 \\ 2 & 2 & 19 \end{bmatrix}$.
+- Plaintext vector 
+
+$$
+P = \begin{bmatrix} 15 \\ 0 \\ 24 \end{bmatrix} \quad \text{(which corresponds to the letters "PAY")}
+$$
+
+- Key matrix 
+
+$$
+K = \begin{bmatrix} 
+17 & 17 & 5 \\ 
+21 & 18 & 21 \\ 
+2 & 2 & 19 
+\end{bmatrix}
+$$
 
 The encryption process is:
 
 $$
-C = \left( \begin{bmatrix} 15 & 0 & 24 \end{bmatrix} \cdot \begin{bmatrix} 17 & 17 & 5 \\ 21 & 18 & 21 \\ 2 & 2 & 19 \end{bmatrix} \right) \mod 26
+C = \left( \begin{bmatrix} 15 \\ 0 \\ 24 \end{bmatrix} \cdot \begin{bmatrix} 
+17 & 17 & 5 \\ 
+21 & 18 & 21 \\ 
+2 & 2 & 19 
+\end{bmatrix} \right) \mod 26
 $$
 
 First, compute the matrix multiplication:
 
 $$
-\begin{bmatrix} 15 & 0 & 24 \end{bmatrix} \cdot \begin{bmatrix} 17 & 17 & 5 \\ 21 & 18 & 21 \\ 2 & 2 & 19 \end{bmatrix}
-= \begin{bmatrix} (15 \cdot 17) + (0 \cdot 21) + (24 \cdot 2) \\ (15 \cdot 17) + (0 \cdot 18) + (24 \cdot 2) \\ (15 \cdot 5) + (0 \cdot 21) + (24 \cdot 19) \end{bmatrix}
-= \begin{bmatrix} 303 & 303 & 531 \end{bmatrix}
+\begin{bmatrix} 15 \\ 0 \\ 24 \end{bmatrix} \cdot \begin{bmatrix} 
+17 & 17 & 5 \\ 
+21 & 18 & 21 \\ 
+2 & 2 & 19 \end{bmatrix} 
+= \begin{bmatrix} 
+(15 \cdot 17) + (0 \cdot 21) + (24 \cdot 2) \\ 
+(15 \cdot 17) + (0 \cdot 18) + (24 \cdot 2) \\ 
+(15 \cdot 5) + (0 \cdot 21) + (24 \cdot 19) 
+\end{bmatrix} 
+= \begin{bmatrix} 
+303 \\ 
+303 \\ 
+531 
+\end{bmatrix}
 $$
 
 Now, apply $\mod 26$:
 
 $$
-C = \begin{bmatrix} 303 \mod 26 & 303 \mod 26 & 531 \mod 26 \end{bmatrix} = \begin{bmatrix} 17 & 17 & 11 \end{bmatrix}
+C = \begin{bmatrix} 
+303 \mod 26 \\ 
+303 \mod 26 \\ 
+531 \mod 26 
+\end{bmatrix} = \begin{bmatrix} 
+17 \\ 
+17 \\ 
+11 
+\end{bmatrix}
 $$
 
 Finally, convert the result to letters (0 = A, 1 = B, ..., 25 = Z):
@@ -71,8 +108,6 @@ So, the ciphertext for "PAY" is **"RRL"**.
 
 ---
 
-
-
 ## Prerequisites
 
 To successfully run this implementation, you need:
@@ -82,9 +117,10 @@ To successfully run this implementation, you need:
 **Dependencies:**
 - Python 3.x
 - NumPy (for matrix operations)
-  ```bash
-  pip install numpy
-  ```
+
+```bash
+pip install numpy
+```
 
 ## Encryption Process
 
@@ -111,8 +147,6 @@ To successfully run this implementation, you need:
 
 3. **Plaintext Retrieval**:
     - Convert the resulting numbers back into letters to retrieve the decrypted plaintext.
-
-Certainly! Below is an expanded section with your requirements, including the key matrix example and its inverse.
 
 ---
 
@@ -150,10 +184,9 @@ $$
 - **Determinant**: To verify that $K$ is invertible, calculate the determinant of $K$. If the determinant is not congruent to 0 modulo 26, then $K$ is invertible.
 - **Inverse Calculation**: The inverse $K^{-1}$ can be computed using methods such as the adjugate matrix and the multiplicative inverse of the determinant modulo 26.
 
-This example demonstrates how a specific key matrix $K$ and its inverse $K^{-1}$ are structured in the context of the Hill Cipher. 
+This example demonstrates how a specific key matrix $K$ and its inverse $K^{-1}$ are structured in the context of the Hill Cipher.
 
 ---
-
 
 ## Usage
 
@@ -170,6 +203,7 @@ Run the program and specify:
 - The key matrix used during encryption.
 
 ### Code Structure:
+
 ```bash
 hill_cipher.py         # Main Python script for encryption and decryption
 README.md              # This file, explaining the Hill Cipher implementation
@@ -222,3 +256,5 @@ print("Decrypted Text:", decrypted_text)
 
 1. Hill, L. S. (1929). Cryptography in an Algebraic Alphabet. *The American Mathematical Monthly*.
 2. [Hill Cipher - Wikipedia](https://en.wikipedia.org/wiki/Hill_cipher)
+
+--- 
