@@ -112,10 +112,47 @@ To successfully run this implementation, you need:
 3. **Plaintext Retrieval**:
     - Convert the resulting numbers back into letters to retrieve the decrypted plaintext.
 
+Certainly! Below is an expanded section with your requirements, including the key matrix example and its inverse.
+
+---
+
 ## Key Matrix and Inverses
 
-- The key matrix must be invertible mod 26. This means its determinant (mod 26) must not be 0, and it must have a multiplicative inverse mod 26.
+- The key matrix must be invertible modulo 26. This means its determinant (mod 26) must not be 0, and it must have a multiplicative inverse modulo 26.
 - The determinant and inverse can be calculated using linear algebra techniques and modular arithmetic.
+
+### Example Key Matrix
+
+For a $3 \times 3$ key matrix $K$:
+
+$$
+K = \begin{bmatrix}
+17 & 17 & 5 \\
+21 & 18 & 21 \\
+2 & 2 & 19
+\end{bmatrix}
+$$
+
+### Inverse Key Matrix
+
+The inverse of the key matrix $K$ modulo 26 is given by:
+
+$$
+K^{-1} = \begin{bmatrix}
+4 & 9 & 15 \\
+15 & 17 & 6 \\
+24 & 0 & 17
+\end{bmatrix}
+$$
+
+### Properties
+
+- **Determinant**: To verify that $K$ is invertible, calculate the determinant of $K$. If the determinant is not congruent to 0 modulo 26, then $K$ is invertible.
+- **Inverse Calculation**: The inverse $K^{-1}$ can be computed using methods such as the adjugate matrix and the multiplicative inverse of the determinant modulo 26.
+
+This example demonstrates how a specific key matrix $K$ and its inverse $K^{-1}$ are structured in the context of the Hill Cipher. 
+
+---
 
 
 ## Usage
