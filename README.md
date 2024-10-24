@@ -32,3 +32,9 @@ To run the algorithms, you'll need Python 3.x installed on your system.
    ```bash
    pip install -r requirements.txt
    ```
+
+
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements for the algorithms, feel free to fork the repository and submit a pull request. Please ensure your code follows the existing style and includes relevant documentation.
