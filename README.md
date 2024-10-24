@@ -9,7 +9,6 @@ This repository contains implementations of various encryption and decryption al
 - **Vigenère Cipher**
 - **Hill Cipher**
 - **DES (Data Encryption Standard)**
-- **Base64 Encoding/Decoding**
 
 ## Getting Started
 
