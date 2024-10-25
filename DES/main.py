@@ -201,6 +201,7 @@ def des_encrypt(L0, R0, ActualKMAP):
         Rn = bin(int(L0, 2) ^ int(F(R0, ActualKMAP[i]), 2))[2:].zfill(32)
         L0, R0 = Ln, Rn
         print(f"Round {i}: L{i} = {L0}, R{i} = {R0}")
+        # print(f"Round {i}: L{i} = {hex(int(L0, 2))[2:].upper()}, R{i} = {hex(int(R0, 2))[2:].upper()}")
     return R0 + L0  # Return combined result after 16 rounds (R16 + L16)
 
 
