@@ -235,7 +235,7 @@ print("Ciphertext:", ciphertext)
 ### Decryption:
 
 ```python
-ciphertext = "RRLMWBKASPDH"
+ciphertext = "LNSHDLEWMTRW"
 key_matrix = [
                 [17,17,5],
                 [21,18,21],
